@@ -26,7 +26,6 @@ class MainActivity : AppCompatActivity() {
         
         //showAlertDialog()
         
-        /*
         listeler = ArrayList()
         
         try {
@@ -79,7 +78,6 @@ class MainActivity : AppCompatActivity() {
                 }
             }
         }
-        */
     }
     
     fun showToast(message: String) {

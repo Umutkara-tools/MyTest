@@ -4,44 +4,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
-
-
-    <androidx.cardview.widget.CardView
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_margin="8dp"
-        app:cardCornerRadius="8dp"
-        app:cardElevation="4dp"
-        android:background="@drawable/item_focus_selector">
-
-       
-
-            <!-- ImageView: CardView'ı tamamen kaplar -->
-            <ImageView
-                android:id="@+id/item_image"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:adjustViewBounds="true"
-                android:src="@drawable/pisa"
-                android:scaleType="centerCrop"
-                android:contentDescription="Kanal logosu" />
-
-            <!-- TextView: ImageView'ın üzerine yerleşir -->
-            <TextView
-                android:id="@+id/item_text"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_alignParentStart="true"
-                android:gravity="center"
-                android:textSize="16sp"
-                android:textColor="@color/white"
-                android:background="@android:color/transparent"
-                android:padding="8dp"
-                android:textStyle="bold"
-                android:text="Kanal Adı" />
-
-    </androidx.cardview.widget.CardView>
+    
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp"/>
 </LinearLayout>
